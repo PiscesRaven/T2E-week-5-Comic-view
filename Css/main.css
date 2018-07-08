@@ -73,12 +73,6 @@ body {
     margin-left: 20px;
 }
 
-/* .comic_chapters ::before {
-    width: 200px;
-    height: 150px;
-    content: attr(data-title);
-} */
-
 .comic_all_chapters {
     display: block;
     margin: 0px auto;
@@ -123,18 +117,6 @@ body {
     display: inline-block;
 }
 
-/* .comic_chapters_list ::after {
-
-    content: "NEW";
-    width: 55px;
-    height: 18px;
-    background-color: #4c4c4c;
-    color: #50ff44;
-    margin-left: 20px;
-    padding: 2px 5px;
-    animation: 2.5s new linear infinite;
-} */
-
 .comic_chapters_list:last-child>a::after {
     content: "NEW";
     width: 55px;
@@ -144,4 +126,94 @@ body {
     margin-left: 20px;
     padding: 2px 5px;
     animation: 2.5s new linear infinite;
+}
+
+/* 按鈕 */
+
+.onoffswitch {
+    float: right;
+    position: relative;
+    width: 90px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 5px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #FFFFFF;
+    color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 26px;
+    margin: 2px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #999999;
+    border-radius: 5px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/**漫畫頁**/
+
+.comic_page {
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
 }
