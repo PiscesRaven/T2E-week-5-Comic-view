@@ -1,0 +1,147 @@
+body {
+    font-family: Helvetica, Roboto, Microsoft JhengHei, Heiti TC, sans-serif;
+}
+
+#comic_page_title {
+    width: 100%;
+    height: auto;
+    background: #000;
+    color: #50FF44;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#comic_page_title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.comic_article {
+    display: flex;
+    margin: 30px auto;
+    height: 450px;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.comic_img {
+    width: 300px;
+    height: 438px;
+    box-sizing: border-box;
+    border: 5px solid #000;
+}
+
+.comic_img>img {
+    height: 100%;
+    width: 100%;
+}
+
+.comic_info_section {
+    width: 320px;
+}
+
+.comic_title {
+    background: #000;
+    color: #fff;
+    font-size: 36px;
+}
+
+.comic_info {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.comic_info_list {
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+.comic_info_sub_title {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.comic_info_sub_detail {
+    font-weight: normal;
+}
+
+.comice_introduce {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* .comic_chapters ::before {
+    width: 200px;
+    height: 150px;
+    content: attr(data-title);
+} */
+
+.comic_all_chapters {
+    display: block;
+    margin: 0px auto;
+    height: 500px;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.comic_chapters_title {
+    width: 181px;
+    height: 44px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.comic_chapters {
+    border: 4px solid #000;
+    padding: 10px 0;
+}
+
+.comic_chapters_list {
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.comic_chapters_list :hover {
+    background: #000;
+    color: #fff;
+    transition: .5s;
+}
+
+.comic_chapters_list>a {
+    padding-left: 25px;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* .comic_chapters_list ::after {
+
+    content: "NEW";
+    width: 55px;
+    height: 18px;
+    background-color: #4c4c4c;
+    color: #50ff44;
+    margin-left: 20px;
+    padding: 2px 5px;
+    animation: 2.5s new linear infinite;
+} */
+
+.comic_chapters_list:last-child>a::after {
+    content: "NEW";
+    width: 55px;
+    height: 18px;
+    background-color: #4c4c4c;
+    color: #50ff44;
+    margin-left: 20px;
+    padding: 2px 5px;
+    animation: 2.5s new linear infinite;
+}
